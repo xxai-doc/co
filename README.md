@@ -2,9 +2,9 @@
 
 * [Documentazione multilingue di u situ web](https://github.com/xxai-doc)
 
-U codice front-end di u situ web hè open source, benvenutu per aiutà à ottimisà a traduzzione
+U codice frontend di u situ web hè open source, benvenutu per aiutà à ottimisà a traduzzione
 
-* [codice front-end](https://github.com/xxai-art/web)
+* [Codice Frontend](https://github.com/xxai-art/web)
 * [Pacchetti di lingua per u situ in tuttu](https://github.com/xxai-art/web/tree/main/i18n)
 * [Pacchetti di lingua per i moduli di login](https://github.com/wacpkg/user/tree/main/ui.i18n)
 * [Documentazione multilingue di u situ web](https://github.com/xxai-doc)
