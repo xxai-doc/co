@@ -2,13 +2,13 @@
 
 [@w5/coffee_plus](http://npmjs.com/@w5/coffee_plus) , aghjunghje qualchi funziunalità nantu à a basa di a sintassi di coffeescript, vede [coffee_plus](./coffee_plus.md) .
 
-* dichjarà variabile
+## dichjarà variabile
 
 ```
 + var1, var2
 ```
 
-* etichetta di dichjarazione
+## etichetta di dichjarazione
 
 `:$` hè per aduprà cù [svelte](https://svelte.dev/docs#component-format-script-3-$-marks-a-statement-as-reactive) .
 
@@ -90,7 +90,7 @@ $ : (func = function() {
 });
 ```
 
-* importazione rapida
+## importazione rapida
 
 ```
 > zx/globals:
