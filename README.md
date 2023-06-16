@@ -1,10 +1,10 @@
 <p align="center"><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/logo.svg"/></a><br/><a href="https://xxai.art"><img src="https://cdn.jsdelivr.net/gh/xxai-art/doc/xxai.svg"/></a></p><p align="center"><a href="https://github.com/xxai-art/doc#readme"><img alt="I18N" src="https://cdn.jsdelivr.net/gh/wactax/img/t.svg"/></a>　<a href="https://groups.google.com/u/0/g/xxai-art"><img alt="Google Groups" src="https://cdn.jsdelivr.net/gh/wactax/img/g-groups.svg"/></a></p>
 
-# xxAI.art
+Hè ricumandemu per installà nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) prima, è dopu `direnv allow` dopu à l'ingressu à u cartulare ( [u .envrc](https://github.com/xxai-art/doc/blob/main/.envrc) serà eseguitu automaticamente dopu à l'ingressu à u cartulare).
 
-Parte di u codice di u situ web hè open source, benvenutu per aiutà à ottimisà a traduzzione.
+U significatu hè: traduzzione cinese in giapponese, coreanu, inglese, traduzzione inglese in tutte l'altri lingue. Se vulete solu sustene u cinese è l'inglese, pudete scrive solu `zh: en` .
 
-## codice front-end
+U significatu hè: traduzzione cinese in giapponese, coreanu, inglese, traduzzione inglese in tutte l'altri lingue. Se vulete solu sustene u cinese è l'inglese, pudete scrive solu `zh: en` .
 
 * [codice front-end](https://github.com/xxai-art/web)
 * [Pacchetti di lingua per u situ in tuttu](https://github.com/xxai-art/web/tree/main/i18n)
@@ -31,15 +31,15 @@ Custruite nantu à i seguenti 3 prughjetti
 
 ### Istruzzioni per l'automatizazione di a traduzzione di documenti
 
-Vede u repository [xxai-art/doc](https://github.com/xxai-art/doc)
+Vede u repository di codice [xxai-art/doc](https://github.com/xxai-art/doc)
 
-Hè ricumandemu per installà nodejs, [direnv](https://direnv.net) è [bun](https://github.com/oven-sh/bun) prima, è poi eseguite `direnv allow` dopu à l'ingressu à u cartulare.
+Hè ricumandemu per installà nodejs, [direnv](https://direnv.net) , [bun](https://github.com/oven-sh/bun) prima, è dopu `direnv allow` dopu à l'ingressu à u cartulare ( [u .envrc](https://github.com/xxai-art/doc/blob/main/.envrc) serà eseguitu automaticamente dopu à l'ingressu à u cartulare).
 
-Per evitari magazzini troppu grandi tradotti in centinaie di lingue, aghju creatu un magazzinu di codice separatu per ogni lingua è creatu una urganizazione per almacenà stu magazzinu.
+Per evità a basa di codice grande tradutta in centinaie di lingue, aghju creatu una basa di codice separata per ogni lingua è creatu una urganizazione per almacenà a basa di codice.
 
-Stabilisce a variabile d'ambiente `GITHUB_ACCESS_TOKEN` è poi eseguisce [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) crea automaticamente u magazzinu.
+Stabilisce a variabile di l'ambiente `GITHUB_ACCESS_TOKEN` è poi eseguisce [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) crea automaticamente u repository di codice.
 
-Di sicuru, pudete ancu mette in un magazzinu.
+Di sicuru, pudete ancu mette in una basa di codice.
 
 Riferimentu di script di traduzzione [run.sh](https://github.com/xxai-art/doc/blob/main/run.sh)
 
@@ -71,4 +71,8 @@ L'API di Google hè aduprata per a traduzzione libera. Se ùn pudete micca acced
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 ```
 
-U script di traduzzione generà una cache di traduzzione in u repertoriu `.i18n` , per piacè verificate cù `git status` è aghjunghje à u repository di codice per evità traduzioni ripetute.
+U script di traduzzione genererà un cache traduttu in u cartulare `.i18n` , verificate cù `git status` è aghjunghje à u repository di codice per evità traduzzioni ripetuti.
+
+Per piacè run `bunx i18n` ogni volta chì mudificà a traduzzione per aghjurnà a cache.
+
+Se u testu uriginale è a traduzzione sò mudificate à u stessu tempu, u cache serà cunfusu, perchè se vulete mudificà, pudete solu mudificà unu, è poi run `bunx i18n` per aghjurnà a cache.
