@@ -17,14 +17,14 @@ U linguaghju di prugrammazione front-end hè [@w5/coffee_plus](http://npmjs.com/
 
 Custruite nantu à i seguenti 3 prughjetti
 
-### [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
+* [@w5/mdt](https://www.npmjs.com/package/@w5/mdt)
 
-U mudellu di markdown, cù u suffissu `.mdt` , pò riferisce à i schedari esterni cù una sintassi simile à `<+ ./coffee_plus/import.js>` .
+  U suffissu hè `.mdt` , pudete aduprà a sintassi simili à `<+ ./coffee_plus/import.js>` per riferite à i schedari esterni, è generà marcatu cù u suffissu `.md` .
 
-[@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
+* [@w5/trmd](https://www.npmjs.com/package/@w5/trmd)
 
-A traduzzione di Markdown ùn traduce micca i codici è i ligami, è mette in cache e frasi tradutte. Se a traduzzione hè mudificata, ma u testu originale ùn hè micca mudificatu, eseguisce di novu ùn sovrascriverà micca a mudificazione di a traduzzione.
+  A traduzzione di Markdown ùn traduce micca i codici è i ligami, è mette in cache e frasi tradutte. Se a traduzzione hè mudificata, ma u testu originale ùn hè micca mudificatu, eseguisce di novu ùn sovrascriverà micca a mudificazione di a traduzzione.
 
-[@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
+* [@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
 
-File di lingua per a traduzzione di siti web generati `yaml` .
+  File di lingua per a traduzzione di siti web generati `yaml` .
