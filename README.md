@@ -28,3 +28,47 @@ Custruite nantu à i seguenti 3 prughjetti
 * [@w5/i18n](https://www.npmjs.com/package/@w5/i18n)
 
   File di lingua per a traduzzione di siti web generati `yaml` .
+
+### Istruzzioni per l'automatizazione di a traduzzione di documenti
+
+Vede u repository [xxai-art/doc](https://github.com/xxai-art/doc)
+
+Hè ricumandemu per installà nodejs, [direnv](https://direnv.net) è [bun](https://github.com/oven-sh/bun) prima, è poi eseguite `direnv allow` dopu à l'ingressu à u cartulare.
+
+Per evitari magazzini troppu grandi tradotti in centinaie di lingue, aghju creatu un magazzinu di codice separatu per ogni lingua è creatu una urganizazione per almacenà stu magazzinu.
+
+Stabilisce a variabile d'ambiente `GITHUB_ACCESS_TOKEN` è poi eseguisce [create.github.coffee](https://github.com/xxai-art/doc/blob/main/create.github.coffee) crea automaticamente u magazzinu.
+
+Di sicuru, pudete ancu mette in un magazzinu.
+
+Riferimentu di script di traduzzione [run.sh](https://github.com/xxai-art/doc/blob/main/run.sh)
+
+U codice di script hè interpretatu cusì:
+
+[bunx](https://bun.sh/docs/cli/bunx) hè un sustitutu per npx, chì hè più veloce. Di sicuru, sè ùn avete micca bun installatu, pudete aduprà `npx` invece.
+
+`bunx mdt zh` rende `.mdt` in u repertoriu zh cum'è `.md` , vede i 2 schedarii ligati sottu
+
+* [coffee_plus.mdt](https://github.com/xxai-doc/zh/blob/main/coffee_plus.mdt)
+* [coffee_plus.md](https://github.com/xxai-doc/zh/blob/main/coffee_plus.md)
+
+`bunx i18n` hè u codice core per a traduzzione (se avete solu `nodejs` installatu, ma `bun` è `direnv` ùn sò micca stallati, pudete ancu eseguisce `npx i18n` per traduce).
+
+Analizerà [i18n.yml](https://github.com/xxai-art/doc/blob/main/i18n.yml) , a cunfigurazione di `i18n.yml` in stu documentu hè a seguente:
+
+```
+en:
+zh: ja ko en
+```
+
+U significatu hè: traduzzione cinese in giapponese, coreanu, inglese, traduzzione inglese in tutte l'altri lingue. Se vulete solu sustene u cinese è l'inglese, pudete scrive solu `zh: en` .
+
+L'ultimu hè [gen.README.coffee](https://github.com/xxai-art/doc/blob/main/gen.README.coffee) , chì estrae u cuntenutu trà u titulu principale è u primu subtitulu di `README.md` di ogni lingua per generà una entrata `README.md` . U codice hè assai simplice, pudete guardà ellu stessu.
+
+L'API di Google hè aduprata per a traduzzione libera. Se ùn pudete micca accede à Google, cunfigurà è stabilisce un proxy, cum'è:
+
+```
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+```
+
+U script di traduzzione generà una cache di traduzzione in u repertoriu `.i18n` , per piacè verificate cù `git status` è aghjunghje à u repository di codice per evità traduzioni ripetute.
